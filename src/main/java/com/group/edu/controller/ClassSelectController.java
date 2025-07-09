@@ -21,11 +21,11 @@ public class ClassSelectController {
         classSelectService.save(info);
         return  R.success("报名成功");
     }
-    @GetMapping("/query")//分页查血
-    public R page(@RequestBody SearchCondition<ClassSelect> classselect){
-        IPage<ClassSelect> page =new Page<>(classselect.getCurrentPage(),classselect.getPageSize());
+    @GetMapping("/query")//分页查询
+    public R page(@RequestBody SearchCondition<ClassSelect> classSelect){
+        IPage<ClassSelect> page =new Page<>(classSelect.getCurrentPage(),classSelect.getPageSize());
         LambdaQueryChainWrapper<ClassSelect> queryWrapper = classSelectService.lambdaQuery();
-        ClassSelect example=classselect.getExample();
+        ClassSelect example=classSelect.getExample();
         if(example.getClassName()!=null){
                     queryWrapper.like(ClassSelect::getClassName,example.getClassName());
         }
