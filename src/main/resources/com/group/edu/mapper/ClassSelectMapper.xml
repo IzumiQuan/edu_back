@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.group.edu.mapper.ClassSelectMapper">
+
+    <resultMap id="BaseResultMap" type="com.group.edu.entity.ClassSelect">
+            <id property="id" column="id" />
+            <result property="name" column="name" />
+            <result property="tel" column="tel" />
+            <result property="sex" column="sex" />
+            <result property="className" column="class_name" />
+            <result property="date" column="date" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,tel,sex,class_name,date
+    </sql>
+</mapper>

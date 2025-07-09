@@ -2,9 +2,9 @@ logging:
   file:
     name: log
 server:
-  port: 90
+  port: 8080
   servlet:
-    context-path: /edu
+    context-path: /api
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver

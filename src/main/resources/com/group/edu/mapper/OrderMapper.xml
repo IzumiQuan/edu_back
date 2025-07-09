@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.group.edu.mapper.OrderMapper">
+
+    <resultMap id="BaseResultMap" type="com.group.edu.entity.Order">
+            <id property="id" column="id" />
+            <result property="name" column="name" />
+            <result property="code" column="code" />
+            <result property="className" column="class_name" />
+            <result property="creatDate" column="creat_date" />
+            <result property="payDate" column="pay_date" />
+            <result property="status" column="status" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,code,class_name,creat_date,pay_date,
+        status
+    </sql>
+</mapper>

@@ -7,9 +7,9 @@ import com.group.edu.mapper.UserMapper;
 import org.springframework.stereotype.Service;
 
 /**
-* @author 21809
+* @author 31822
 * @description 针对表【user(用户表)】的数据库操作Service实现
-* @createDate 2025-07-09 00:36:00
+* @createDate 2025-07-09 22:48:48
 */
 @Service
 public class UserServiceImpl extends ServiceImpl<UserMapper, User>
