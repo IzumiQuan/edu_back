@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.group.edu.mapper.UserMapper">
+
+    <resultMap id="BaseResultMap" type="com.group.edu.entity.User">
+            <id property="id" column="id" />
+            <result property="tel" column="tel" />
+            <result property="pwd" column="pwd" />
+            <result property="avatar" column="avatar" />
+            <result property="name" column="name" />
+            <result property="sex" column="sex" />
+            <result property="email" column="email" />
+            <result property="idCard" column="id_card" />
+            <result property="company" column="company" />
+            <result property="role" column="role" />
+            <result property="classHour" column="class_hour" />
+            <result property="vipEndTime" column="vip_end_time" />
+            <result property="createTime" column="create_time" />
+            <result property="updateTime" column="update_time" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,tel,pwd,avatar,name,sex,
+        email,id_card,company,role,class_hour,
+        vip_end_time,create_time,update_time
+    </sql>
+</mapper>

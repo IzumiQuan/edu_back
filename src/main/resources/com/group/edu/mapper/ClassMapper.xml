@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.group.edu.mapper.ClassMapper">
+
+    <resultMap id="BaseResultMap" type="com.group.edu.entity.Class">
+            <id property="id" column="id" />
+            <result property="name" column="name" />
+            <result property="subject" column="subject" />
+            <result property="classHour" column="class_hour" />
+            <result property="price" column="price" />
+            <result property="learnerNum" column="learner_num" />
+            <result property="intro" column="intro" />
+            <result property="tag" column="tag" />
+            <result property="file" column="file" />
+            <result property="examId" column="exam_id" />
+            <result property="createTime" column="create_time" />
+            <result property="updateTime" column="update_time" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,subject,class_hour,price,learner_num,
+        intro,tag,file,exam_id,create_time,
+        update_time
+    </sql>
+</mapper>
