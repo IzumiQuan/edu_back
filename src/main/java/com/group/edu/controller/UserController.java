@@ -40,6 +40,19 @@ public class UserController {
         }
     }
 
+    @PostMapping("/avatar")
+    public R avatar(@RequestBody User user){
+        LambdaQueryChainWrapper<User> lq = userService.lambdaQuery();
+        List<User> l = lq.eq(User::getTel, user.getTel()).list();
+        if(l.isEmpty()){
+            return R.success();
+        }else{
+            User u = new User();
+            u.setAvatar(l.get(0).getAvatar());
+            return R.success(u);
+        }
+    }
+
     @PostMapping("/remove")
     public R remove(@RequestParam String id){
         boolean r = userService.removeById(Integer.parseInt(id));//用户注销
