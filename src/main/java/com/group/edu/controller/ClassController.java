@@ -11,6 +11,8 @@ import com.group.edu.service.ClassService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 @CrossOrigin
@@ -58,8 +60,19 @@ public class ClassController {
         LambdaQueryChainWrapper<Class> lq = classService.lambdaQuery();
         Class example = c.getExample();
         lq.in(c.getList() != null, Class::getSubject, c.getList());
-        if(!c.getRange().isEmpty())
-            lq.between(Class::getClassHour, c.getRange().get(0), c.getRange().get(1));
+        if(c.getRange() != null){
+            List<Integer> l = new ArrayList<>();
+            for(String s : c.getRange()){
+                String[] parts = s.split("-");
+                int start = Integer.parseInt(parts[0]);
+                int end = Integer.parseInt(parts[1]);
+                for(int i = start; i <= end; i++){
+                    l.add(i);
+                }
+            }
+            lq.in(Class::getClassHour, l);
+        }
+
         if(example!=null){
             lq
                     .eq(example.getId() != null,Class::getId, example.getId())//判断id相同
