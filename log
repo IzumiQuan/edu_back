@@ -367,3 +367,193 @@ com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long
 2025-07-10T16:06:53.056+08:00  INFO 15316 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
 2025-07-10T16:06:53.103+08:00  INFO 15316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api'
 2025-07-10T16:06:53.110+08:00  INFO 15316 --- [restartedMain] com.group.edu.EduApplication             : Started EduApplication in 2.526 seconds (process running for 3.138)
+2025-07-10T16:08:20.457+08:00  INFO 15316 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-10T16:08:20.457+08:00  INFO 15316 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-10T16:08:20.457+08:00  INFO 15316 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-07-10T16:08:20.624+08:00  INFO 15316 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-10T16:08:20.750+08:00  INFO 15316 --- [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@28980002
+2025-07-10T16:08:20.761+08:00  INFO 15316 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-10T18:32:10.539+08:00  INFO 15316 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-07-10T18:32:10.543+08:00  INFO 15316 --- [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-10T18:32:10.550+08:00  INFO 15316 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-10T18:32:10.556+08:00  INFO 15316 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-10T18:32:10.558+08:00  INFO 15316 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-10T18:32:10.636+08:00  INFO 15316 --- [restartedMain] com.group.edu.EduApplication             : Starting EduApplication using Java 22.0.2 with PID 15316 (E:\dev\workspace\project\edu_back\target\classes started by 21809 in E:\dev\workspace\project\edu_back)
+2025-07-10T18:32:10.636+08:00  INFO 15316 --- [restartedMain] com.group.edu.EduApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-07-10T18:32:10.944+08:00  INFO 15316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-10T18:32:10.946+08:00  INFO 15316 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-10T18:32:10.946+08:00  INFO 15316 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-10T18:32:10.956+08:00  INFO 15316 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2025-07-10T18:32:10.957+08:00  INFO 15316 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 318 ms
+2025-07-10T18:32:11.318+08:00  INFO 15316 --- [restartedMain] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@745fc7b0
+2025-07-10T18:32:11.352+08:00  INFO 15316 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-10T18:32:11.374+08:00  INFO 15316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api'
+2025-07-10T18:32:11.376+08:00  INFO 15316 --- [restartedMain] com.group.edu.EduApplication             : Started EduApplication in 0.769 seconds (process running for 8721.147)
+2025-07-10T18:32:11.378+08:00  INFO 15316 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-07-10T18:32:12.792+08:00  INFO 15316 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+2025-07-10T18:32:12.794+08:00  INFO 15316 --- [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-10T18:32:12.800+08:00  INFO 15316 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-10T18:32:12.903+08:00  INFO 15316 --- [restartedMain] com.group.edu.EduApplication             : Starting EduApplication using Java 22.0.2 with PID 15316 (E:\dev\workspace\project\edu_back\target\classes started by 21809 in E:\dev\workspace\project\edu_back)
+2025-07-10T18:32:12.903+08:00  INFO 15316 --- [restartedMain] com.group.edu.EduApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-07-10T18:32:13.067+08:00  INFO 15316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-10T18:32:13.067+08:00  INFO 15316 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-10T18:32:13.067+08:00  INFO 15316 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-10T18:32:13.077+08:00  INFO 15316 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2025-07-10T18:32:13.077+08:00  INFO 15316 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 172 ms
+2025-07-10T18:32:13.316+08:00  INFO 15316 --- [restartedMain] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@8236693
+2025-07-10T18:32:13.330+08:00  INFO 15316 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-10T18:32:13.349+08:00  INFO 15316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api'
+2025-07-10T18:32:13.351+08:00  INFO 15316 --- [restartedMain] com.group.edu.EduApplication             : Started EduApplication in 0.466 seconds (process running for 8723.122)
+2025-07-10T18:32:13.352+08:00  INFO 15316 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-07-10T18:32:53.336+08:00  INFO 15316 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-07-10T18:32:53.338+08:00  INFO 15316 --- [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-10T18:32:53.343+08:00  INFO 15316 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-10T18:32:53.468+08:00  INFO 15316 --- [restartedMain] com.group.edu.EduApplication             : Starting EduApplication using Java 22.0.2 with PID 15316 (E:\dev\workspace\project\edu_back\target\classes started by 21809 in E:\dev\workspace\project\edu_back)
+2025-07-10T18:32:53.468+08:00  INFO 15316 --- [restartedMain] com.group.edu.EduApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-07-10T18:32:53.712+08:00  INFO 15316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-10T18:32:53.713+08:00  INFO 15316 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-10T18:32:53.713+08:00  INFO 15316 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-10T18:32:53.724+08:00  INFO 15316 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2025-07-10T18:32:53.725+08:00  INFO 15316 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 255 ms
+2025-07-10T18:32:54.074+08:00  INFO 15316 --- [restartedMain] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30aece56
+2025-07-10T18:32:54.098+08:00  INFO 15316 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-10T18:32:54.121+08:00  INFO 15316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api'
+2025-07-10T18:32:54.125+08:00  INFO 15316 --- [restartedMain] com.group.edu.EduApplication             : Started EduApplication in 0.69 seconds (process running for 8763.891)
+2025-07-10T18:32:54.126+08:00  INFO 15316 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-07-10T18:33:04.764+08:00  INFO 15316 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-10T18:33:04.769+08:00  INFO 15316 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-10T18:33:08.336+08:00  INFO 17856 --- [restartedMain] com.group.edu.EduApplication             : Starting EduApplication using Java 22.0.2 with PID 17856 (E:\dev\workspace\project\edu_back\target\classes started by 21809 in E:\dev\workspace\project\edu_back)
+2025-07-10T18:33:08.339+08:00  INFO 17856 --- [restartedMain] com.group.edu.EduApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-07-10T18:33:08.384+08:00  INFO 17856 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-10T18:33:08.385+08:00  INFO 17856 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-10T18:33:09.258+08:00  INFO 17856 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-10T18:33:09.272+08:00  INFO 17856 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-10T18:33:09.272+08:00  INFO 17856 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-10T18:33:09.304+08:00  INFO 17856 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2025-07-10T18:33:09.305+08:00  INFO 17856 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 918 ms
+2025-07-10T18:33:10.028+08:00  INFO 17856 --- [restartedMain] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6b8235e3
+2025-07-10T18:33:10.110+08:00  INFO 17856 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-10T18:33:10.153+08:00  INFO 17856 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api'
+2025-07-10T18:33:10.160+08:00  INFO 17856 --- [restartedMain] com.group.edu.EduApplication             : Started EduApplication in 2.3 seconds (process running for 2.837)
+2025-07-10T21:26:29.206+08:00  INFO 17856 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-10T21:26:29.211+08:00  INFO 17856 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-10T21:26:33.250+08:00  INFO 26528 --- [restartedMain] com.group.edu.EduApplication             : Starting EduApplication using Java 22.0.2 with PID 26528 (E:\dev\workspace\project\edu_back\target\classes started by 21809 in E:\dev\workspace\project\edu_back)
+2025-07-10T21:26:33.251+08:00  INFO 26528 --- [restartedMain] com.group.edu.EduApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-07-10T21:26:33.292+08:00  INFO 26528 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-10T21:26:33.293+08:00  INFO 26528 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-10T21:26:34.174+08:00  INFO 26528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-10T21:26:34.192+08:00  INFO 26528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-10T21:26:34.192+08:00  INFO 26528 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-10T21:26:34.223+08:00  INFO 26528 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2025-07-10T21:26:34.223+08:00  INFO 26528 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 930 ms
+2025-07-10T21:26:34.932+08:00  INFO 26528 --- [restartedMain] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@fc1edcc
+2025-07-10T21:26:35.004+08:00  INFO 26528 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-10T21:26:35.043+08:00  INFO 26528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api'
+2025-07-10T21:26:35.051+08:00  INFO 26528 --- [restartedMain] com.group.edu.EduApplication             : Started EduApplication in 2.302 seconds (process running for 2.929)
+2025-07-10T21:29:07.647+08:00  INFO 26528 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2025-07-10T21:29:07.652+08:00  INFO 26528 --- [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-10T21:29:07.660+08:00  INFO 26528 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-10T21:29:07.782+08:00  INFO 26528 --- [restartedMain] com.group.edu.EduApplication             : Starting EduApplication using Java 22.0.2 with PID 26528 (E:\dev\workspace\project\edu_back\target\classes started by 21809 in E:\dev\workspace\project\edu_back)
+2025-07-10T21:29:07.782+08:00  INFO 26528 --- [restartedMain] com.group.edu.EduApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-07-10T21:29:08.112+08:00  INFO 26528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-10T21:29:08.114+08:00  INFO 26528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-10T21:29:08.115+08:00  INFO 26528 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-10T21:29:08.125+08:00  INFO 26528 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2025-07-10T21:29:08.125+08:00  INFO 26528 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 338 ms
+2025-07-10T21:29:08.443+08:00  INFO 26528 --- [restartedMain] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4426f3e8
+2025-07-10T21:29:08.473+08:00  INFO 26528 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-10T21:29:08.495+08:00  INFO 26528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api'
+2025-07-10T21:29:08.497+08:00  INFO 26528 --- [restartedMain] com.group.edu.EduApplication             : Started EduApplication in 0.765 seconds (process running for 156.376)
+2025-07-10T21:29:08.499+08:00  INFO 26528 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-07-10T21:30:16.806+08:00  INFO 26528 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-07-10T21:30:16.807+08:00  INFO 26528 --- [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-10T21:30:16.812+08:00  INFO 26528 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-10T21:30:16.923+08:00  INFO 26528 --- [restartedMain] com.group.edu.EduApplication             : Starting EduApplication using Java 22.0.2 with PID 26528 (E:\dev\workspace\project\edu_back\target\classes started by 21809 in E:\dev\workspace\project\edu_back)
+2025-07-10T21:30:16.923+08:00  INFO 26528 --- [restartedMain] com.group.edu.EduApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-07-10T21:30:17.128+08:00  INFO 26528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-10T21:30:17.128+08:00  INFO 26528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-10T21:30:17.129+08:00  INFO 26528 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-10T21:30:17.139+08:00  INFO 26528 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2025-07-10T21:30:17.139+08:00  INFO 26528 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 214 ms
+2025-07-10T21:30:17.150+08:00  WARN 26528 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'classSelectController': Lookup method resolution failed
+2025-07-10T21:30:17.151+08:00  INFO 26528 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-07-10T21:30:17.155+08:00  INFO 26528 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-07-10T21:30:17.175+08:00 ERROR 26528 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'classSelectController': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1229) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.8.jar:6.2.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.8.jar:6.2.8]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.3.jar:3.5.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.3.jar:3.5.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.3.jar:3.5.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.3.jar:3.5.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.3.jar:3.5.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.3.jar:3.5.3]
+	at com.group.edu.EduApplication.main(EduApplication.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.3.jar:3.5.3]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.group.edu.controller.ClassSelectController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@5cdacec1]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483) ~[spring-core-6.2.8.jar:6.2.8]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320) ~[spring-core-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476) ~[spring-beans-6.2.8.jar:6.2.8]
+	... 24 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/group/edu/common/SearchCondition
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3601) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2686) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465) ~[spring-core-6.2.8.jar:6.2.8]
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.group.edu.common.SearchCondition
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:529) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:508) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.5.3.jar:3.5.3]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
+	... 30 common frames omitted
+
+2025-07-10T21:30:38.860+08:00  INFO 26528 --- [restartedMain] com.group.edu.EduApplication             : Starting EduApplication using Java 22.0.2 with PID 26528 (E:\dev\workspace\project\edu_back\target\classes started by 21809 in E:\dev\workspace\project\edu_back)
+2025-07-10T21:30:38.861+08:00  INFO 26528 --- [restartedMain] com.group.edu.EduApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-07-10T21:30:39.012+08:00  INFO 26528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-10T21:30:39.014+08:00  INFO 26528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-10T21:30:39.014+08:00  INFO 26528 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-10T21:30:39.022+08:00  INFO 26528 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/api]  : Initializing Spring embedded WebApplicationContext
+2025-07-10T21:30:39.022+08:00  INFO 26528 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 160 ms
+2025-07-10T21:30:39.254+08:00  INFO 26528 --- [restartedMain] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b2c4b65
+2025-07-10T21:30:39.269+08:00  INFO 26528 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-10T21:30:39.288+08:00  INFO 26528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api'
+2025-07-10T21:30:39.290+08:00  INFO 26528 --- [restartedMain] com.group.edu.EduApplication             : Started EduApplication in 0.445 seconds (process running for 247.168)
+2025-07-10T21:30:39.291+08:00  INFO 26528 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-07-10T21:34:18.700+08:00  INFO 26528 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-07-10T21:34:18.702+08:00  INFO 26528 --- [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-10T21:34:18.706+08:00  INFO 26528 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-10T21:34:18.793+08:00  INFO 26528 --- [restartedMain] com.group.edu.EduApplication             : Starting EduApplication using Java 22.0.2 with PID 26528 (E:\dev\workspace\project\edu_back\target\classes started by 21809 in E:\dev\workspace\project\edu_back)
+2025-07-10T21:34:18.793+08:00  INFO 26528 --- [restartedMain] com.group.edu.EduApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-07-10T21:34:18.959+08:00  INFO 26528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-10T21:34:18.961+08:00  INFO 26528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-10T21:34:18.961+08:00  INFO 26528 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-10T21:34:18.969+08:00  INFO 26528 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/api]  : Initializing Spring embedded WebApplicationContext
+2025-07-10T21:34:18.970+08:00  INFO 26528 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 175 ms
+2025-07-10T21:34:19.221+08:00  INFO 26528 --- [restartedMain] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2de91210
+2025-07-10T21:34:19.243+08:00  INFO 26528 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-10T21:34:19.263+08:00  INFO 26528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api'
+2025-07-10T21:34:19.265+08:00  INFO 26528 --- [restartedMain] com.group.edu.EduApplication             : Started EduApplication in 0.491 seconds (process running for 467.144)
+2025-07-10T21:34:19.266+08:00  INFO 26528 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
