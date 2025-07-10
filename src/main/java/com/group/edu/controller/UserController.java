@@ -13,15 +13,15 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/user")
-@CrossOrigin
 public class UserController {
     @Autowired
     UserService userService;
 
-    @PostMapping("/login")
-    public R login(@RequestBody User user) {
+    @PostMapping("/regist")
+    public R regist(@RequestBody User user) {
         LambdaQueryChainWrapper<User> lq = userService.lambdaQuery();
         List<User> l = lq.eq(User::getTel, user.getTel()).list();//查询数据库中是否有该用户
         if(l.isEmpty()){
@@ -32,9 +32,20 @@ public class UserController {
                 return R.fail("注册失败");
             }
         }else{
+            return R.fail("用户已存在");
+        }
+    }
+
+    @PostMapping("/login")
+    public R login(@RequestBody User user) {
+        LambdaQueryChainWrapper<User> lq = userService.lambdaQuery();
+        List<User> l = lq.eq(User::getTel, user.getTel()).list();
+        if(l.isEmpty()){
+            return R.fail("用户不存在");
+        }else{
             l = lq.eq(User::getTel, user.getTel()).eq(User::getPwd, user.getPwd()).list();//查询数据库中该用户密码是否正确
             if(l.isEmpty()){
-                return R.fail("密码错误");
+                return R.fail("账号或密码错误");
             }
             return R.success(l.get(0));
         }
