@@ -10,6 +10,6 @@ public class SearchCondition<T> {
     private int pageSize = 10;
     private T example;
     private List<String> list;
-    private List<Integer> range;
+    private List<String> range;
     private String orderBy;
 }
