@@ -59,18 +59,21 @@ public class ClassController {
         IPage<Class> page = new Page<>(c.getCurrentPage(), c.getPageSize());//设置当前页和每页数量
         LambdaQueryChainWrapper<Class> lq = classService.lambdaQuery();
         Class example = c.getExample();
-        lq.in(c.getList() != null, Class::getSubject, c.getList());
+        if(c.getList() != null)
+            lq.in(!c.getList().isEmpty(), Class::getSubject, c.getList());
         if(c.getRange() != null){
-            List<Integer> l = new ArrayList<>();
-            for(String s : c.getRange()){
-                String[] parts = s.split("-");
-                int start = Integer.parseInt(parts[0]);
-                int end = Integer.parseInt(parts[1]);
-                for(int i = start; i <= end; i++){
-                    l.add(i);
+            if(!c.getRange().isEmpty()){
+                List<Integer> l = new ArrayList<>();
+                for(String s : c.getRange()){
+                    String[] parts = s.split("-");
+                    int start = Integer.parseInt(parts[0]);
+                    int end = Integer.parseInt(parts[1]);
+                    for(int i = start; i <= end; i++){
+                        l.add(i);
+                    }
                 }
+                lq.in(Class::getClassHour, l);
             }
-            lq.in(Class::getClassHour, l);
         }
 
         if(example!=null){
