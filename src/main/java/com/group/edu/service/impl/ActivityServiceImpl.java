@@ -7,9 +7,9 @@ import com.group.edu.mapper.ActivityMapper;
 import org.springframework.stereotype.Service;
 
 /**
-* @author 31822
+* @author 21809
 * @description 针对表【activity】的数据库操作Service实现
-* @createDate 2025-07-09 22:48:48
+* @createDate 2025-07-11 19:33:26
 */
 @Service
 public class ActivityServiceImpl extends ServiceImpl<ActivityMapper, Activity>

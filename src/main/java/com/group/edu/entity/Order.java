@@ -21,7 +21,7 @@ public class Order {
     private Integer id;
 
     /**
-     * 姓名
+     * 用户
      */
     private String name;
 

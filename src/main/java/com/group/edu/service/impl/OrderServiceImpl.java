@@ -7,9 +7,9 @@ import com.group.edu.mapper.OrderMapper;
 import org.springframework.stereotype.Service;
 
 /**
-* @author 31822
+* @author 21809
 * @description 针对表【order】的数据库操作Service实现
-* @createDate 2025-07-09 23:09:16
+* @createDate 2025-07-11 19:33:26
 */
 @Service
 public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order>

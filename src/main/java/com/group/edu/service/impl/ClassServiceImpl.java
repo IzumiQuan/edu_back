@@ -7,9 +7,9 @@ import com.group.edu.mapper.ClassMapper;
 import org.springframework.stereotype.Service;
 
 /**
-* @author 31822
+* @author 21809
 * @description 针对表【class(课程表)】的数据库操作Service实现
-* @createDate 2025-07-09 22:48:48
+* @createDate 2025-07-11 19:33:26
 */
 @Service
 public class ClassServiceImpl extends ServiceImpl<ClassMapper, Class>

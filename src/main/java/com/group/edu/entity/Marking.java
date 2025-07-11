@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import java.util.Date;
 import lombok.Data;
 
 /**
@@ -34,6 +35,16 @@ public class Marking {
      */
     private String content;
 
+    /**
+     * 头像
+     */
+    private String avatar;
+
+    /**
+     * 
+     */
+    private Date date;
+
     @Override
     public boolean equals(Object that) {
         if (this == that) {
@@ -49,7 +60,9 @@ public class Marking {
         return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
             && (this.getName() == null ? other.getName() == null : this.getName().equals(other.getName()))
             && (this.getPoint() == null ? other.getPoint() == null : this.getPoint().equals(other.getPoint()))
-            && (this.getContent() == null ? other.getContent() == null : this.getContent().equals(other.getContent()));
+            && (this.getContent() == null ? other.getContent() == null : this.getContent().equals(other.getContent()))
+            && (this.getAvatar() == null ? other.getAvatar() == null : this.getAvatar().equals(other.getAvatar()))
+            && (this.getDate() == null ? other.getDate() == null : this.getDate().equals(other.getDate()));
     }
 
     @Override
@@ -60,6 +73,8 @@ public class Marking {
         result = prime * result + ((getName() == null) ? 0 : getName().hashCode());
         result = prime * result + ((getPoint() == null) ? 0 : getPoint().hashCode());
         result = prime * result + ((getContent() == null) ? 0 : getContent().hashCode());
+        result = prime * result + ((getAvatar() == null) ? 0 : getAvatar().hashCode());
+        result = prime * result + ((getDate() == null) ? 0 : getDate().hashCode());
         return result;
     }
 
@@ -73,6 +88,8 @@ public class Marking {
         sb.append(", name=").append(name);
         sb.append(", point=").append(point);
         sb.append(", content=").append(content);
+        sb.append(", avatar=").append(avatar);
+        sb.append(", date=").append(date);
         sb.append("]");
         return sb.toString();
     }
