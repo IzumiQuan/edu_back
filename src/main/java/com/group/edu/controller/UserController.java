@@ -65,8 +65,8 @@ public class UserController {
         }
     }
 
-    @PostMapping("/remove")
-    public R remove(@RequestParam String id){
+    @PostMapping("/remove/{id}")
+    public R remove(@PathVariable String id){
         boolean r = userService.removeById(Integer.parseInt(id));//用户注销
         if(r){
             return R.success();

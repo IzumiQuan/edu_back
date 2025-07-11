@@ -11,5 +11,5 @@ public class SearchCondition<T> {
     private T example;
     private List<String> list;
     private List<String> range;
-    private String orderBy;
+    private String sort;
 }

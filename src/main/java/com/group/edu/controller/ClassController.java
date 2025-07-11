@@ -17,14 +17,14 @@ import java.util.Objects;
 
 @CrossOrigin
 @RestController
-@RequestMapping("/class")
+@RequestMapping("/course")
 public class ClassController {
     @Autowired
     ClassService classService;
 
     @PostMapping("/add")
     public R add(@RequestBody Class c) {
-        boolean r = classService.save(c);//用户注册
+        boolean r = classService.save(c);
         if (r) {
             return R.success();
         } else {
@@ -32,9 +32,9 @@ public class ClassController {
         }
     }
 
-    @PostMapping("/remove")
-    public R remove(@RequestParam String id){
-        boolean r = classService.removeById(Integer.parseInt(id));//用户注销
+    @PostMapping("/remove/{id}")
+    public R remove(@PathVariable String id){
+        boolean r = classService.removeById(Integer.parseInt(id));
         if(r){
             return R.success();
         }
@@ -45,7 +45,7 @@ public class ClassController {
 
     @PostMapping("/reset")
     public R set(@RequestBody Class c){
-        boolean r = classService.updateById(c);//用户信息修改
+        boolean r = classService.updateById(c);
         if(r){
             return R.success(c);
         }
@@ -75,16 +75,15 @@ public class ClassController {
                 lq.in(Class::getClassHour, l);
             }
         }
-
         if(example!=null){
             lq
                     .eq(example.getId() != null,Class::getId, example.getId())//判断id相同
                     .like(StringUtils.isNotEmpty(example.getName()), Class::getName, example.getName());//模糊查询名称
         }
-        if(Objects.equals(c.getOrderBy(), "asc")){
+        if(Objects.equals(c.getSort(), "asc")){
             lq.orderByAsc(Class::getCreateTime);
         }
-        else if(Objects.equals(c.getOrderBy(), "desc")){
+        else if(Objects.equals(c.getSort(), "desc")){
             lq.orderByDesc(Class::getCreateTime);
         }
         lq.page(page);//分页查询
