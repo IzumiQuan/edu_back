@@ -44,9 +44,10 @@ public class UserController {
             return R.fail("用户不存在");
         }else{
             l = lq.eq(User::getTel, user.getTel()).eq(User::getPwd, user.getPwd()).list();//查询数据库中该用户密码是否正确
-            if(l.isEmpty()){
+            if(l.isEmpty()) {
                 return R.fail("账号或密码错误");
             }
+            l.get(0).setPwd(null);
             return R.success(l.get(0));
         }
     }
