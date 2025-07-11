@@ -11,6 +11,9 @@ import com.group.edu.service.ActivityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Calendar;
+import java.util.Date;
+
 @CrossOrigin
 @RestController
 @RequestMapping("/activity")
@@ -58,7 +61,20 @@ public class ActivityController {
         if(example!=null){
             lq
                     .eq(example.getId() != null,Activity::getId, example.getId())//判断id相同
-                    .like(StringUtils.isNotEmpty(example.getName()), Activity::getName, example.getName());//模糊查询名称
+                    .like(StringUtils.isNotEmpty(example.getName()), Activity::getName, example.getName());//模糊查询名
+            if (example.getStartTime() != null) {
+                Calendar calendar = Calendar.getInstance();
+                calendar.setTime(example.getStartTime());
+                calendar.set(Calendar.HOUR_OF_DAY, 0);
+                calendar.set(Calendar.MINUTE, 0);
+                calendar.set(Calendar.SECOND, 0);
+                calendar.set(Calendar.MILLISECOND, 0);
+                Date start = calendar.getTime();
+                calendar.add(Calendar.DAY_OF_MONTH, 1);
+                Date end = calendar.getTime();
+                lq.between(Activity::getStartTime, start, end);
+            }
+
         }
         lq.page(page);//分页查询
         return R.success(page);
