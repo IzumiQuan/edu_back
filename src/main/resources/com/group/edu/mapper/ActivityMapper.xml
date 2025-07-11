@@ -7,6 +7,7 @@
     <resultMap id="BaseResultMap" type="com.group.edu.entity.Activity">
             <id property="id" column="id" />
             <result property="name" column="name" />
+            <result property="img" column="img" />
             <result property="attendeeNum" column="attendee_num" />
             <result property="intro" column="intro" />
             <result property="tag" column="tag" />
@@ -17,7 +18,7 @@
     </resultMap>
 
     <sql id="Base_Column_List">
-        id,name,attendee_num,intro,tag,start_time,
-        end_time,create_time,update_time
+        id,name,img,attendee_num,intro,tag,
+        start_time,end_time,create_time,update_time
     </sql>
 </mapper>

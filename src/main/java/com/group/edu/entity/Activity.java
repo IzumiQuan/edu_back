@@ -26,6 +26,11 @@ public class Activity {
     private String name;
 
     /**
+     * 图片
+     */
+    private String img;
+
+    /**
      * 报名人数
      */
     private Integer attendeeNum;
@@ -74,6 +79,7 @@ public class Activity {
         Activity other = (Activity) that;
         return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
             && (this.getName() == null ? other.getName() == null : this.getName().equals(other.getName()))
+            && (this.getImg() == null ? other.getImg() == null : this.getImg().equals(other.getImg()))
             && (this.getAttendeeNum() == null ? other.getAttendeeNum() == null : this.getAttendeeNum().equals(other.getAttendeeNum()))
             && (this.getIntro() == null ? other.getIntro() == null : this.getIntro().equals(other.getIntro()))
             && (this.getTag() == null ? other.getTag() == null : this.getTag().equals(other.getTag()))
@@ -89,6 +95,7 @@ public class Activity {
         int result = 1;
         result = prime * result + ((getId() == null) ? 0 : getId().hashCode());
         result = prime * result + ((getName() == null) ? 0 : getName().hashCode());
+        result = prime * result + ((getImg() == null) ? 0 : getImg().hashCode());
         result = prime * result + ((getAttendeeNum() == null) ? 0 : getAttendeeNum().hashCode());
         result = prime * result + ((getIntro() == null) ? 0 : getIntro().hashCode());
         result = prime * result + ((getTag() == null) ? 0 : getTag().hashCode());
@@ -107,6 +114,7 @@ public class Activity {
         sb.append("Hash = ").append(hashCode());
         sb.append(", id=").append(id);
         sb.append(", name=").append(name);
+        sb.append(", img=").append(img);
         sb.append(", attendeeNum=").append(attendeeNum);
         sb.append(", intro=").append(intro);
         sb.append(", tag=").append(tag);

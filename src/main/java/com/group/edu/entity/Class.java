@@ -27,6 +27,11 @@ public class Class {
     private String name;
 
     /**
+     * 图片
+     */
+    private String img;
+
+    /**
      * 课程方向
      */
     private String subject;
@@ -90,6 +95,7 @@ public class Class {
         Class other = (Class) that;
         return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
             && (this.getName() == null ? other.getName() == null : this.getName().equals(other.getName()))
+            && (this.getImg() == null ? other.getImg() == null : this.getImg().equals(other.getImg()))
             && (this.getSubject() == null ? other.getSubject() == null : this.getSubject().equals(other.getSubject()))
             && (this.getClassHour() == null ? other.getClassHour() == null : this.getClassHour().equals(other.getClassHour()))
             && (this.getPrice() == null ? other.getPrice() == null : this.getPrice().equals(other.getPrice()))
@@ -108,6 +114,7 @@ public class Class {
         int result = 1;
         result = prime * result + ((getId() == null) ? 0 : getId().hashCode());
         result = prime * result + ((getName() == null) ? 0 : getName().hashCode());
+        result = prime * result + ((getImg() == null) ? 0 : getImg().hashCode());
         result = prime * result + ((getSubject() == null) ? 0 : getSubject().hashCode());
         result = prime * result + ((getClassHour() == null) ? 0 : getClassHour().hashCode());
         result = prime * result + ((getPrice() == null) ? 0 : getPrice().hashCode());
@@ -129,6 +136,7 @@ public class Class {
         sb.append("Hash = ").append(hashCode());
         sb.append(", id=").append(id);
         sb.append(", name=").append(name);
+        sb.append(", img=").append(img);
         sb.append(", subject=").append(subject);
         sb.append(", classHour=").append(classHour);
         sb.append(", price=").append(price);

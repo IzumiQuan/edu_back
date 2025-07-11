@@ -6,7 +6,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 /**
 * @author 21809
 * @description 针对表【order】的数据库操作Mapper
-* @createDate 2025-07-11 19:33:26
+* @createDate 2025-07-11 21:47:54
 * @Entity com.group.edu.entity.Order
 */
 public interface OrderMapper extends BaseMapper<Order> {
