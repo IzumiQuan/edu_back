@@ -128,3 +128,69 @@
 2025-07-12T11:05:40.452+08:00  INFO 12780 --- [http-nio-0.0.0.0-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
 2025-07-12T11:05:40.554+08:00  INFO 12780 --- [http-nio-0.0.0.0-8080-exec-3] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@64969d82
 2025-07-12T11:05:40.554+08:00  INFO 12780 --- [http-nio-0.0.0.0-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-12T16:08:40.674+08:00  INFO 12780 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-12T16:08:40.683+08:00  INFO 12780 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-12T16:08:40.686+08:00  INFO 12780 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-12T16:08:40.692+08:00  INFO 12780 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-12T16:08:44.901+08:00  INFO 10980 --- [restartedMain] com.group.edu.EduApplication             : Starting EduApplication using Java 22.0.2 with PID 10980 (E:\dev\workspace\project\edu_back\target\classes started by 21809 in E:\dev\workspace\project\edu_back)
+2025-07-12T16:08:44.904+08:00  INFO 10980 --- [restartedMain] com.group.edu.EduApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-07-12T16:08:44.949+08:00  INFO 10980 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-12T16:08:44.949+08:00  INFO 10980 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-12T16:08:45.893+08:00  INFO 10980 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-12T16:08:45.906+08:00  INFO 10980 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-12T16:08:45.906+08:00  INFO 10980 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-12T16:08:45.938+08:00  INFO 10980 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2025-07-12T16:08:45.938+08:00  INFO 10980 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 989 ms
+2025-07-12T16:08:46.683+08:00  INFO 10980 --- [restartedMain] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14f8af0c
+2025-07-12T16:08:46.766+08:00  INFO 10980 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-12T16:08:46.809+08:00  INFO 10980 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api'
+2025-07-12T16:08:46.816+08:00  INFO 10980 --- [restartedMain] com.group.edu.EduApplication             : Started EduApplication in 2.363 seconds (process running for 5.17)
+2025-07-12T16:08:50.263+08:00  INFO 10980 --- [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-12T16:08:50.263+08:00  INFO 10980 --- [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-12T16:08:50.264+08:00  INFO 10980 --- [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-07-12T16:08:50.449+08:00  INFO 10980 --- [http-nio-0.0.0.0-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-12T16:08:50.595+08:00  INFO 10980 --- [http-nio-0.0.0.0-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1fa40d6c
+2025-07-12T16:08:50.597+08:00  INFO 10980 --- [http-nio-0.0.0.0-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-12T16:40:42.620+08:00  WARN 10980 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=26m52s938ms574µs400ns).
+2025-07-12T16:53:26.901+08:00  INFO 10980 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-12T16:53:26.909+08:00  INFO 10980 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-12T16:53:26.924+08:00  INFO 10980 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-12T16:53:26.930+08:00  INFO 10980 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-12T16:53:33.032+08:00  INFO 29716 --- [restartedMain] com.group.edu.EduApplication             : Starting EduApplication using Java 22.0.2 with PID 29716 (E:\dev\workspace\project\edu_back\target\classes started by 21809 in E:\dev\workspace\project\edu_back)
+2025-07-12T16:53:33.034+08:00  INFO 29716 --- [restartedMain] com.group.edu.EduApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-07-12T16:53:33.096+08:00  INFO 29716 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-12T16:53:33.097+08:00  INFO 29716 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-12T16:53:34.463+08:00  INFO 29716 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-12T16:53:34.484+08:00  INFO 29716 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-12T16:53:34.484+08:00  INFO 29716 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-12T16:53:34.537+08:00  INFO 29716 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2025-07-12T16:53:34.537+08:00  INFO 29716 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1440 ms
+2025-07-12T16:53:35.706+08:00  INFO 29716 --- [restartedMain] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7dd6e68c
+2025-07-12T16:53:35.810+08:00  INFO 29716 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-12T16:53:35.869+08:00  INFO 29716 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api'
+2025-07-12T16:53:35.880+08:00  INFO 29716 --- [restartedMain] com.group.edu.EduApplication             : Started EduApplication in 3.536 seconds (process running for 7.065)
+2025-07-12T16:53:41.721+08:00  INFO 29716 --- [http-nio-0.0.0.0-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-12T16:53:41.722+08:00  INFO 29716 --- [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-12T16:53:41.724+08:00  INFO 29716 --- [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-07-12T16:53:42.238+08:00  INFO 29716 --- [http-nio-0.0.0.0-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-12T16:53:42.544+08:00  INFO 29716 --- [http-nio-0.0.0.0-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@65ab0a22
+2025-07-12T16:53:42.548+08:00  INFO 29716 --- [http-nio-0.0.0.0-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-12T19:09:34.741+08:00  WARN 29716 --- [http-nio-0.0.0.0-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.group.edu.common.R com.group.edu.controller.MarkingController.page(com.group.edu.common.SearchCondition<com.group.edu.entity.Marking>)]
+2025-07-12T19:14:19.629+08:00  WARN 29716 --- [http-nio-0.0.0.0-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.group.edu.common.R com.group.edu.controller.MarkingController.page(com.group.edu.common.SearchCondition<com.group.edu.entity.Marking>)]
+2025-07-12T21:46:40.631+08:00  INFO 29716 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-12T21:46:40.636+08:00  INFO 29716 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-12T21:46:40.641+08:00  INFO 29716 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-12T21:46:40.643+08:00  INFO 29716 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-12T21:46:47.366+08:00  INFO 30316 --- [restartedMain] com.group.edu.EduApplication             : Starting EduApplication using Java 22.0.2 with PID 30316 (E:\dev\workspace\project\edu_back\target\classes started by 21809 in E:\dev\workspace\project\edu_back)
+2025-07-12T21:46:47.368+08:00  INFO 30316 --- [restartedMain] com.group.edu.EduApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-07-12T21:46:47.414+08:00  INFO 30316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-12T21:46:47.415+08:00  INFO 30316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-12T21:46:48.394+08:00  INFO 30316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-12T21:46:48.406+08:00  INFO 30316 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-12T21:46:48.406+08:00  INFO 30316 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-12T21:46:48.436+08:00  INFO 30316 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2025-07-12T21:46:48.437+08:00  INFO 30316 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1021 ms
+2025-07-12T21:46:49.147+08:00  INFO 30316 --- [restartedMain] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@624429c1
+2025-07-12T21:46:49.217+08:00  INFO 30316 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-12T21:46:49.263+08:00  INFO 30316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api'
+2025-07-12T21:46:49.273+08:00  INFO 30316 --- [restartedMain] com.group.edu.EduApplication             : Started EduApplication in 2.518 seconds (process running for 3.191)
