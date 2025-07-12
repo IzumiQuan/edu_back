@@ -62,11 +62,6 @@ public class Class {
     private Object tag;
 
     /**
-     * 附件
-     */
-    private Object file;
-
-    /**
      * 考试id
      */
     private Integer examId;
@@ -102,7 +97,6 @@ public class Class {
             && (this.getLearnerNum() == null ? other.getLearnerNum() == null : this.getLearnerNum().equals(other.getLearnerNum()))
             && (this.getIntro() == null ? other.getIntro() == null : this.getIntro().equals(other.getIntro()))
             && (this.getTag() == null ? other.getTag() == null : this.getTag().equals(other.getTag()))
-            && (this.getFile() == null ? other.getFile() == null : this.getFile().equals(other.getFile()))
             && (this.getExamId() == null ? other.getExamId() == null : this.getExamId().equals(other.getExamId()))
             && (this.getCreateTime() == null ? other.getCreateTime() == null : this.getCreateTime().equals(other.getCreateTime()))
             && (this.getUpdateTime() == null ? other.getUpdateTime() == null : this.getUpdateTime().equals(other.getUpdateTime()));
@@ -121,7 +115,6 @@ public class Class {
         result = prime * result + ((getLearnerNum() == null) ? 0 : getLearnerNum().hashCode());
         result = prime * result + ((getIntro() == null) ? 0 : getIntro().hashCode());
         result = prime * result + ((getTag() == null) ? 0 : getTag().hashCode());
-        result = prime * result + ((getFile() == null) ? 0 : getFile().hashCode());
         result = prime * result + ((getExamId() == null) ? 0 : getExamId().hashCode());
         result = prime * result + ((getCreateTime() == null) ? 0 : getCreateTime().hashCode());
         result = prime * result + ((getUpdateTime() == null) ? 0 : getUpdateTime().hashCode());
@@ -143,7 +136,6 @@ public class Class {
         sb.append(", learnerNum=").append(learnerNum);
         sb.append(", intro=").append(intro);
         sb.append(", tag=").append(tag);
-        sb.append(", file=").append(file);
         sb.append(", examId=").append(examId);
         sb.append(", createTime=").append(createTime);
         sb.append(", updateTime=").append(updateTime);
