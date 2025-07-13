@@ -26,24 +26,24 @@ public class ClassSelect {
     private String name;
 
     /**
-     * 手机号码
-     */
-    private String tel;
-
-    /**
-     * 性别
-     */
-    private String sex;
-
-    /**
      * 课程名
      */
     private String className;
 
     /**
+     * 课程图片
+     */
+    private String img;
+
+    /**
+     * 课程标签
+     */
+    private Object tag;
+
+    /**
      * 日期
      */
-    private Date date;
+    private Date createDate;
 
     @Override
     public boolean equals(Object that) {
@@ -59,10 +59,10 @@ public class ClassSelect {
         ClassSelect other = (ClassSelect) that;
         return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
             && (this.getName() == null ? other.getName() == null : this.getName().equals(other.getName()))
-            && (this.getTel() == null ? other.getTel() == null : this.getTel().equals(other.getTel()))
-            && (this.getSex() == null ? other.getSex() == null : this.getSex().equals(other.getSex()))
             && (this.getClassName() == null ? other.getClassName() == null : this.getClassName().equals(other.getClassName()))
-            && (this.getDate() == null ? other.getDate() == null : this.getDate().equals(other.getDate()));
+            && (this.getImg() == null ? other.getImg() == null : this.getImg().equals(other.getImg()))
+            && (this.getTag() == null ? other.getTag() == null : this.getTag().equals(other.getTag()))
+            && (this.getCreateDate() == null ? other.getCreateDate() == null : this.getCreateDate().equals(other.getCreateDate()));
     }
 
     @Override
@@ -71,10 +71,10 @@ public class ClassSelect {
         int result = 1;
         result = prime * result + ((getId() == null) ? 0 : getId().hashCode());
         result = prime * result + ((getName() == null) ? 0 : getName().hashCode());
-        result = prime * result + ((getTel() == null) ? 0 : getTel().hashCode());
-        result = prime * result + ((getSex() == null) ? 0 : getSex().hashCode());
         result = prime * result + ((getClassName() == null) ? 0 : getClassName().hashCode());
-        result = prime * result + ((getDate() == null) ? 0 : getDate().hashCode());
+        result = prime * result + ((getImg() == null) ? 0 : getImg().hashCode());
+        result = prime * result + ((getTag() == null) ? 0 : getTag().hashCode());
+        result = prime * result + ((getCreateDate() == null) ? 0 : getCreateDate().hashCode());
         return result;
     }
 
@@ -86,10 +86,10 @@ public class ClassSelect {
         sb.append("Hash = ").append(hashCode());
         sb.append(", id=").append(id);
         sb.append(", name=").append(name);
-        sb.append(", tel=").append(tel);
-        sb.append(", sex=").append(sex);
         sb.append(", className=").append(className);
-        sb.append(", date=").append(date);
+        sb.append(", img=").append(img);
+        sb.append(", tag=").append(tag);
+        sb.append(", createDate=").append(createDate);
         sb.append("]");
         return sb.toString();
     }

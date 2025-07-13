@@ -7,13 +7,13 @@
     <resultMap id="BaseResultMap" type="com.group.edu.entity.ClassSelect">
             <id property="id" column="id" />
             <result property="name" column="name" />
-            <result property="tel" column="tel" />
-            <result property="sex" column="sex" />
             <result property="className" column="class_name" />
-            <result property="date" column="date" />
+            <result property="img" column="img" />
+            <result property="tag" column="tag" />
+            <result property="createDate" column="create_date" />
     </resultMap>
 
     <sql id="Base_Column_List">
-        id,name,tel,sex,class_name,date
+        id,name,class_name,img,tag,create_date
     </sql>
 </mapper>

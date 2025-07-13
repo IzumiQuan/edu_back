@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.*;
 
 @CrossOrigin
 @RestController
-@RequestMapping("/enroll")
+@RequestMapping("/select")
 
 public class ClassSelectController {
     @Autowired
     private ClassSelectService classSelectService;
-    @PostMapping("/a")//活动报名
+    @PostMapping("/add")//活动报名
     public R attend(@RequestBody ClassSelect info){
         classSelectService.save(info);
         return  R.success("报名成功");
@@ -26,8 +26,8 @@ public class ClassSelectController {
         IPage<ClassSelect> page =new Page<>(classSelect.getCurrentPage(),classSelect.getPageSize());
         LambdaQueryChainWrapper<ClassSelect> queryWrapper = classSelectService.lambdaQuery();
         ClassSelect example=classSelect.getExample();
-        if(example.getClassName()!=null){
-                    queryWrapper.like(ClassSelect::getClassName,example.getClassName());
+        if(example!=null){
+                    queryWrapper.like(ClassSelect::getName,example.getName());
         }
         queryWrapper.page(page);
         return R.success(page);
