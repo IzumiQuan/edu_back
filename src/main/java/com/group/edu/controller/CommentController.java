@@ -14,30 +14,15 @@ import org.springframework.web.bind.annotation.*;
 public class CommentController {
     @Autowired
     private CommentService commentService;
-    private OrderService orderService;
-    @Autowired
-    private MarkingService markingService;
 
-    @PostMapping("/submitquestion")//联系我们
-    public R submitquestion(@RequestBody Comment comment){
+    @PostMapping("/add")//联系我们
+    public R add(@RequestBody Comment comment){
         commentService.save(comment);
         if(comment!=null){
-            return R.success("提交成功");
+            return R.success();
         }
         else {
-            return R.fail("请填写内容");
-        }
-
-    }
-    @PostMapping("submitpoint")//课程打分
-    public R submitpoint(@RequestBody Marking marking){
-        markingService.save(marking);
-        if(marking!=null){
-            return R.success("提交成功");
-        }
-        else  {
-            return R.fail("请填写内容");
+            return R.fail("提交错误");
         }
     }
-
 }
