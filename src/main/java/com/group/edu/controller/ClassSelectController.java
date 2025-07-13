@@ -12,18 +12,17 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin
 @RestController
 @RequestMapping("/select")
-
 public class ClassSelectController {
     @Autowired
     private ClassSelectService classSelectService;
     @PostMapping("/add")//活动报名
     public R attend(@RequestBody ClassSelect info){
         classSelectService.save(info);
-        return  R.success("报名成功");
+        return R.success("报名成功");
     }
-    @GetMapping("/query")//分页查询
+    @PostMapping("/query")//分页查询
     public R page(@RequestBody SearchCondition<ClassSelect> classSelect){
-        IPage<ClassSelect> page =new Page<>(classSelect.getCurrentPage(),classSelect.getPageSize());
+        IPage<ClassSelect> page = new Page<>(classSelect.getCurrentPage(),classSelect.getPageSize());
         LambdaQueryChainWrapper<ClassSelect> queryWrapper = classSelectService.lambdaQuery();
         ClassSelect example=classSelect.getExample();
         if(example!=null){
