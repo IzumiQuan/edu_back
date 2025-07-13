@@ -9,13 +9,13 @@
             <result property="name" column="name" />
             <result property="code" column="code" />
             <result property="className" column="class_name" />
-            <result property="creatDate" column="creat_date" />
+            <result property="createDate" column="create_date" />
             <result property="payDate" column="pay_date" />
             <result property="status" column="status" />
     </resultMap>
 
     <sql id="Base_Column_List">
-        id,name,code,class_name,creat_date,pay_date,
+        id,name,code,class_name,create_date,pay_date,
         status
     </sql>
 </mapper>

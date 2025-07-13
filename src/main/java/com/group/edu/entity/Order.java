@@ -38,7 +38,7 @@ public class Order {
     /**
      * 生成时间
      */
-    private Date creatDate;
+    private Date createDate;
 
     /**
      * 支付时间
@@ -66,7 +66,7 @@ public class Order {
             && (this.getName() == null ? other.getName() == null : this.getName().equals(other.getName()))
             && (this.getCode() == null ? other.getCode() == null : this.getCode().equals(other.getCode()))
             && (this.getClassName() == null ? other.getClassName() == null : this.getClassName().equals(other.getClassName()))
-            && (this.getCreatDate() == null ? other.getCreatDate() == null : this.getCreatDate().equals(other.getCreatDate()))
+            && (this.getCreateDate() == null ? other.getCreateDate() == null : this.getCreateDate().equals(other.getCreateDate()))
             && (this.getPayDate() == null ? other.getPayDate() == null : this.getPayDate().equals(other.getPayDate()))
             && (this.getStatus() == null ? other.getStatus() == null : this.getStatus().equals(other.getStatus()));
     }
@@ -79,7 +79,7 @@ public class Order {
         result = prime * result + ((getName() == null) ? 0 : getName().hashCode());
         result = prime * result + ((getCode() == null) ? 0 : getCode().hashCode());
         result = prime * result + ((getClassName() == null) ? 0 : getClassName().hashCode());
-        result = prime * result + ((getCreatDate() == null) ? 0 : getCreatDate().hashCode());
+        result = prime * result + ((getCreateDate() == null) ? 0 : getCreateDate().hashCode());
         result = prime * result + ((getPayDate() == null) ? 0 : getPayDate().hashCode());
         result = prime * result + ((getStatus() == null) ? 0 : getStatus().hashCode());
         return result;
@@ -95,7 +95,7 @@ public class Order {
         sb.append(", name=").append(name);
         sb.append(", code=").append(code);
         sb.append(", className=").append(className);
-        sb.append(", creatDate=").append(creatDate);
+        sb.append(", createDate=").append(createDate);
         sb.append(", payDate=").append(payDate);
         sb.append(", status=").append(status);
         sb.append("]");
