@@ -5,29 +5,29 @@ import com.baomidou.mybatisplus.extension.conditions.query.LambdaQueryChainWrapp
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.group.edu.common.R;
 import com.group.edu.common.SearchCondition;
-import com.group.edu.entity.ClassSelect;
-import com.group.edu.service.ClassSelectService;
+import com.group.edu.entity.ActivityEnroll;
+import com.group.edu.service.ActivityEnrollService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @CrossOrigin
 @RestController
-@RequestMapping("/select")
-public class ClassSelectController {
+@RequestMapping("/enroll")
+public class ActivityEnrollController {
     @Autowired
-    private ClassSelectService classSelectService;
+    private ActivityEnrollService activityEnrollService;
     @PostMapping("/add")//活动报名
-    public R attend(@RequestBody ClassSelect info){
-        classSelectService.save(info);
+    public R attend(@RequestBody ActivityEnroll info){
+        activityEnrollService.save(info);
         return R.success("报名成功");
     }
     @PostMapping("/query")//分页查询
-    public R page(@RequestBody SearchCondition<ClassSelect> classSelect){
-        IPage<ClassSelect> page = new Page<>(classSelect.getCurrentPage(),classSelect.getPageSize());
-        LambdaQueryChainWrapper<ClassSelect> queryWrapper = classSelectService.lambdaQuery();
-        ClassSelect example=classSelect.getExample();
+    public R page(@RequestBody SearchCondition<ActivityEnroll> ae){
+        IPage<ActivityEnroll> page = new Page<>(ae.getCurrentPage(),ae.getPageSize());
+        LambdaQueryChainWrapper<ActivityEnroll> queryWrapper = activityEnrollService.lambdaQuery();
+        ActivityEnroll example = ae.getExample();
         if(example!=null){
-                    queryWrapper.like(ClassSelect::getName,example.getName());
+            queryWrapper.like(ActivityEnroll::getName,example.getName());
         }
         queryWrapper.page(page);
         return R.success(page);
