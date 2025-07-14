@@ -23,7 +23,7 @@ public class Bill {
     /**
      * 
      */
-    private String billname;
+    private String billName;
 
     /**
      * 
@@ -58,7 +58,7 @@ public class Bill {
         }
         Bill other = (Bill) that;
         return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
-            && (this.getBillname() == null ? other.getBillname() == null : this.getBillname().equals(other.getBillname()))
+            && (this.getBillName() == null ? other.getBillName() == null : this.getBillName().equals(other.getBillName()))
             && (this.getBillCode() == null ? other.getBillCode() == null : this.getBillCode().equals(other.getBillCode()))
             && (this.getStatus() == null ? other.getStatus() == null : this.getStatus().equals(other.getStatus()))
             && (this.getPrice() == null ? other.getPrice() == null : this.getPrice().equals(other.getPrice()))
@@ -70,7 +70,7 @@ public class Bill {
         final int prime = 31;
         int result = 1;
         result = prime * result + ((getId() == null) ? 0 : getId().hashCode());
-        result = prime * result + ((getBillname() == null) ? 0 : getBillname().hashCode());
+        result = prime * result + ((getBillName() == null) ? 0 : getBillName().hashCode());
         result = prime * result + ((getBillCode() == null) ? 0 : getBillCode().hashCode());
         result = prime * result + ((getStatus() == null) ? 0 : getStatus().hashCode());
         result = prime * result + ((getPrice() == null) ? 0 : getPrice().hashCode());
@@ -85,7 +85,7 @@ public class Bill {
         sb.append(" [");
         sb.append("Hash = ").append(hashCode());
         sb.append(", id=").append(id);
-        sb.append(", billname=").append(billname);
+        sb.append(", billName=").append(billName);
         sb.append(", billCode=").append(billCode);
         sb.append(", status=").append(status);
         sb.append(", price=").append(price);
