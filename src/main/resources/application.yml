@@ -9,7 +9,7 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.20.12:3306/edu?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf8&useUnicode=true&connectionTimeZone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://192.168.8.32:3306/edu?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf8&useUnicode=true&connectionTimeZone=Asia/Shanghai&allowPublicKeyRetrieval=true
     username: root
     password: root
     hikari:
