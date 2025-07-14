@@ -159,3 +159,26 @@ Consider defining a bean of type 'com.group.edu.service.ActivityEnrollService' i
 2025-07-14T09:31:35.047+08:00  INFO 2512 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api'
 2025-07-14T09:31:35.050+08:00  INFO 2512 --- [restartedMain] com.group.edu.EduApplication             : Started EduApplication in 0.662 seconds (process running for 227.746)
 2025-07-14T09:31:35.051+08:00  INFO 2512 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-07-14T09:33:05.441+08:00  INFO 2512 --- [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/api]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-14T09:33:05.441+08:00  INFO 2512 --- [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-14T09:33:05.442+08:00  INFO 2512 --- [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-07-14T09:33:05.451+08:00  INFO 2512 --- [http-nio-0.0.0.0-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-07-14T09:33:05.455+08:00  INFO 2512 --- [http-nio-0.0.0.0-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6bfb570b
+2025-07-14T09:33:05.456+08:00  INFO 2512 --- [http-nio-0.0.0.0-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-07-14T09:41:01.519+08:00  INFO 2512 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-14T09:41:01.524+08:00  INFO 2512 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-14T09:41:01.526+08:00  INFO 2512 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-07-14T09:41:01.527+08:00  INFO 2512 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-07-14T09:41:05.636+08:00  INFO 32228 --- [restartedMain] com.group.edu.EduApplication             : Starting EduApplication using Java 22.0.2 with PID 32228 (E:\dev\workspace\project\edu_back\target\classes started by 21809 in E:\dev\workspace\project\edu_back)
+2025-07-14T09:41:05.638+08:00  INFO 32228 --- [restartedMain] com.group.edu.EduApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-07-14T09:41:05.679+08:00  INFO 32228 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-14T09:41:05.679+08:00  INFO 32228 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-14T09:41:06.590+08:00  INFO 32228 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-14T09:41:06.602+08:00  INFO 32228 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-14T09:41:06.603+08:00  INFO 32228 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-14T09:41:06.634+08:00  INFO 32228 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2025-07-14T09:41:06.634+08:00  INFO 32228 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 955 ms
+2025-07-14T09:41:07.588+08:00  INFO 32228 --- [restartedMain] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6348123f
+2025-07-14T09:41:07.678+08:00  INFO 32228 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-14T09:41:07.726+08:00  INFO 32228 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api'
+2025-07-14T09:41:07.734+08:00  INFO 32228 --- [restartedMain] com.group.edu.EduApplication             : Started EduApplication in 2.621 seconds (process running for 3.239)
