@@ -9,11 +9,11 @@ import lombok.Data;
 
 /**
  * 
- * @TableName order
+ * @TableName orders
  */
-@TableName(value ="order")
+@TableName(value ="orders")
 @Data
-public class Order {
+public class Orders {
     /**
      * 
      */
@@ -61,7 +61,7 @@ public class Order {
         if (getClass() != that.getClass()) {
             return false;
         }
-        Order other = (Order) that;
+        Orders other = (Orders) that;
         return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
             && (this.getName() == null ? other.getName() == null : this.getName().equals(other.getName()))
             && (this.getCode() == null ? other.getCode() == null : this.getCode().equals(other.getCode()))
