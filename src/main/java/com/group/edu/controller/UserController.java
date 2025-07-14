@@ -80,7 +80,9 @@ public class UserController {
     public R set(@RequestBody User user){
         boolean r = userService.updateById(user);//用户信息修改
         if(r){
-            return R.success(user);
+            User u = userService.getById(user.getId());
+            u.setPwd(null);
+            return R.success(u);
         }
         else{
             return R.fail();

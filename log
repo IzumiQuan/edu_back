@@ -7535,3 +7535,32 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 2025-07-14T10:06:29.708+08:00  INFO 2280 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
 2025-07-14T10:06:29.768+08:00  INFO 2280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api'
 2025-07-14T10:06:29.777+08:00  INFO 2280 --- [restartedMain] com.group.edu.EduApplication             : Started EduApplication in 2.315 seconds (process running for 2.914)
+2025-07-14T10:06:45.020+08:00  INFO 2280 --- [http-nio-0.0.0.0-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-14T10:06:45.020+08:00  INFO 2280 --- [http-nio-0.0.0.0-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-14T10:06:45.021+08:00  INFO 2280 --- [http-nio-0.0.0.0-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-07-14T10:06:45.248+08:00  INFO 2280 --- [http-nio-0.0.0.0-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-14T10:06:45.375+08:00  INFO 2280 --- [http-nio-0.0.0.0-8080-exec-3] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1178aa0
+2025-07-14T10:06:45.377+08:00  INFO 2280 --- [http-nio-0.0.0.0-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-14T11:31:02.460+08:00  INFO 2280 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-14T11:31:02.466+08:00  INFO 2280 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-14T11:31:02.470+08:00  INFO 2280 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-14T11:31:02.473+08:00  INFO 2280 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-14T11:31:08.027+08:00  INFO 18072 --- [restartedMain] com.group.edu.EduApplication             : Starting EduApplication using Java 22.0.2 with PID 18072 (E:\dev\workspace\project\edu_back\target\classes started by 21809 in E:\dev\workspace\project\edu_back)
+2025-07-14T11:31:08.028+08:00  INFO 18072 --- [restartedMain] com.group.edu.EduApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-07-14T11:31:08.075+08:00  INFO 18072 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-14T11:31:08.077+08:00  INFO 18072 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-14T11:31:08.975+08:00  INFO 18072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-14T11:31:08.987+08:00  INFO 18072 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-14T11:31:08.988+08:00  INFO 18072 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-14T11:31:09.017+08:00  INFO 18072 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2025-07-14T11:31:09.017+08:00  INFO 18072 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 940 ms
+2025-07-14T11:31:09.745+08:00  INFO 18072 --- [restartedMain] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@44ddc5da
+2025-07-14T11:31:09.819+08:00  INFO 18072 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-14T11:31:09.868+08:00  INFO 18072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api'
+2025-07-14T11:31:09.875+08:00  INFO 18072 --- [restartedMain] com.group.edu.EduApplication             : Started EduApplication in 2.313 seconds (process running for 2.87)
+2025-07-14T11:31:21.647+08:00  INFO 18072 --- [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-14T11:31:21.647+08:00  INFO 18072 --- [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-14T11:31:21.652+08:00  INFO 18072 --- [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2025-07-14T11:31:21.816+08:00  INFO 18072 --- [http-nio-0.0.0.0-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-14T11:31:21.949+08:00  INFO 18072 --- [http-nio-0.0.0.0-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@13304f66
+2025-07-14T11:31:21.949+08:00  INFO 18072 --- [http-nio-0.0.0.0-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
