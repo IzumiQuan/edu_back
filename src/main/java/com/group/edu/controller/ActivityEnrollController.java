@@ -19,7 +19,7 @@ public class ActivityEnrollController {
     @PostMapping("/add")//活动报名
     public R attend(@RequestBody ActivityEnroll info){
         activityEnrollService.save(info);
-        return R.success("报名成功");
+        return R.success();
     }
     @PostMapping("/query")//分页查询
     public R page(@RequestBody SearchCondition<ActivityEnroll> ae){

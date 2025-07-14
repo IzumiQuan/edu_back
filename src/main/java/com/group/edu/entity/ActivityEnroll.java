@@ -17,7 +17,7 @@ public class ActivityEnroll {
     /**
      * 主键
      */
-    @TableId
+    @TableId(type = IdType.AUTO)
     private Integer id;
 
     /**
