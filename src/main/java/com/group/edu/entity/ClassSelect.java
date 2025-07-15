@@ -26,6 +26,11 @@ public class ClassSelect {
     private String name;
 
     /**
+     * 课程id
+     */
+    private Integer classId;
+
+    /**
      * 课程名
      */
     private String className;
@@ -59,6 +64,7 @@ public class ClassSelect {
         ClassSelect other = (ClassSelect) that;
         return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
             && (this.getName() == null ? other.getName() == null : this.getName().equals(other.getName()))
+            && (this.getClassId() == null ? other.getClassId() == null : this.getClassId().equals(other.getClassId()))
             && (this.getClassName() == null ? other.getClassName() == null : this.getClassName().equals(other.getClassName()))
             && (this.getImg() == null ? other.getImg() == null : this.getImg().equals(other.getImg()))
             && (this.getTag() == null ? other.getTag() == null : this.getTag().equals(other.getTag()))
@@ -71,6 +77,7 @@ public class ClassSelect {
         int result = 1;
         result = prime * result + ((getId() == null) ? 0 : getId().hashCode());
         result = prime * result + ((getName() == null) ? 0 : getName().hashCode());
+        result = prime * result + ((getClassId() == null) ? 0 : getClassId().hashCode());
         result = prime * result + ((getClassName() == null) ? 0 : getClassName().hashCode());
         result = prime * result + ((getImg() == null) ? 0 : getImg().hashCode());
         result = prime * result + ((getTag() == null) ? 0 : getTag().hashCode());
@@ -86,6 +93,7 @@ public class ClassSelect {
         sb.append("Hash = ").append(hashCode());
         sb.append(", id=").append(id);
         sb.append(", name=").append(name);
+        sb.append(", classId=").append(classId);
         sb.append(", className=").append(className);
         sb.append(", img=").append(img);
         sb.append(", tag=").append(tag);

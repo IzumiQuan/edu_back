@@ -7,6 +7,7 @@
     <resultMap id="BaseResultMap" type="com.group.edu.entity.ClassSelect">
             <id property="id" column="id" />
             <result property="name" column="name" />
+            <result property="classId" column="class_id" />
             <result property="className" column="class_name" />
             <result property="img" column="img" />
             <result property="tag" column="tag" />
@@ -14,6 +15,7 @@
     </resultMap>
 
     <sql id="Base_Column_List">
-        id,name,class_name,img,tag,create_date
+        id,name,class_id,class_name,img,tag,
+        create_date
     </sql>
 </mapper>

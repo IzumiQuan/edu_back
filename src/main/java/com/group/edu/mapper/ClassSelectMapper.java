@@ -6,7 +6,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 /**
 * @author 21809
 * @description 针对表【class_select】的数据库操作Mapper
-* @createDate 2025-07-13 21:28:19
+* @createDate 2025-07-15 13:20:36
 * @Entity com.group.edu.entity.ClassSelect
 */
 public interface ClassSelectMapper extends BaseMapper<ClassSelect> {

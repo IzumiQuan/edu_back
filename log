@@ -305,3 +305,99 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 2025-07-15T01:17:07.298+08:00  INFO 6636 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
 2025-07-15T01:17:07.308+08:00  INFO 6636 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-07-15T01:17:07.311+08:00  INFO 6636 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-15T09:00:46.293+08:00  INFO 21864 --- [restartedMain] com.group.edu.EduApplication             : Starting EduApplication using Java 22.0.2 with PID 21864 (E:\dev\workspace\project\edu_back\target\classes started by 21809 in E:\dev\workspace\project\edu_back)
+2025-07-15T09:00:46.295+08:00  INFO 21864 --- [restartedMain] com.group.edu.EduApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-07-15T09:00:46.341+08:00  INFO 21864 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-15T09:00:46.341+08:00  INFO 21864 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-15T09:00:47.465+08:00  INFO 21864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-15T09:00:47.477+08:00  INFO 21864 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-15T09:00:47.477+08:00  INFO 21864 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-15T09:00:47.507+08:00  INFO 21864 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2025-07-15T09:00:47.507+08:00  INFO 21864 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1166 ms
+2025-07-15T09:00:48.489+08:00  INFO 21864 --- [restartedMain] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2dc3d207
+2025-07-15T09:00:48.566+08:00  INFO 21864 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-15T09:00:48.613+08:00  INFO 21864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api'
+2025-07-15T09:00:48.622+08:00  INFO 21864 --- [restartedMain] com.group.edu.EduApplication             : Started EduApplication in 3.145 seconds (process running for 4.274)
+2025-07-15T09:10:36.374+08:00  INFO 21864 --- [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-15T09:10:36.374+08:00  INFO 21864 --- [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-15T09:10:36.374+08:00  INFO 21864 --- [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-07-15T09:10:36.551+08:00  INFO 21864 --- [http-nio-0.0.0.0-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-15T09:10:36.666+08:00  INFO 21864 --- [http-nio-0.0.0.0-8080-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3d6e52b2
+2025-07-15T09:10:36.666+08:00  INFO 21864 --- [http-nio-0.0.0.0-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-15T10:06:43.554+08:00  WARN 21864 --- [http-nio-0.0.0.0-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "study": not a valid `java.lang.Integer` value]
+2025-07-15T10:09:32.710+08:00  WARN 21864 --- [http-nio-0.0.0.0-8080-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@563beae4 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-07-15T10:09:32.710+08:00  WARN 21864 --- [http-nio-0.0.0.0-8080-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@584d1d15 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-07-15T10:09:32.710+08:00  WARN 21864 --- [http-nio-0.0.0.0-8080-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@183b0bc9 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-07-15T10:09:32.710+08:00  WARN 21864 --- [http-nio-0.0.0.0-8080-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@51e1ca90 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-07-15T10:09:32.710+08:00  WARN 21864 --- [http-nio-0.0.0.0-8080-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4ec4452a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-07-15T10:09:57.070+08:00  WARN 21864 --- [http-nio-0.0.0.0-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "study": not a valid `java.lang.Integer` value]
+2025-07-15T10:09:59.001+08:00  WARN 21864 --- [http-nio-0.0.0.0-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "study": not a valid `java.lang.Integer` value]
+2025-07-15T10:10:01.887+08:00  WARN 21864 --- [http-nio-0.0.0.0-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "study": not a valid `java.lang.Integer` value]
+2025-07-15T10:10:04.109+08:00  WARN 21864 --- [http-nio-0.0.0.0-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "study": not a valid `java.lang.Integer` value]
+2025-07-15T10:10:06.362+08:00  WARN 21864 --- [http-nio-0.0.0.0-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "study": not a valid `java.lang.Integer` value]
+2025-07-15T10:10:14.255+08:00  WARN 21864 --- [http-nio-0.0.0.0-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "study": not a valid `java.lang.Integer` value]
+2025-07-15T10:10:15.505+08:00  WARN 21864 --- [http-nio-0.0.0.0-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "study": not a valid `java.lang.Integer` value]
+2025-07-15T10:10:18.525+08:00  WARN 21864 --- [http-nio-0.0.0.0-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "study": not a valid `java.lang.Integer` value]
+2025-07-15T10:10:30.089+08:00  WARN 21864 --- [http-nio-0.0.0.0-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "study": not a valid `java.lang.Integer` value]
+2025-07-15T10:10:39.887+08:00  WARN 21864 --- [http-nio-0.0.0.0-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "study": not a valid `java.lang.Integer` value]
+2025-07-15T10:10:41.780+08:00  WARN 21864 --- [http-nio-0.0.0.0-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "study": not a valid `java.lang.Integer` value]
+2025-07-15T10:28:46.670+08:00  WARN 21864 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2ec56d5e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-07-15T10:29:07.670+08:00  WARN 21864 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@48f6e13a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-07-15T10:29:11.748+08:00  WARN 21864 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@e2e5663 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-07-15T10:29:19.156+08:00  WARN 21864 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@71ae89ad (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-07-15T10:30:19.966+08:00  WARN 21864 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3401d4db (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-07-15T11:07:01.236+08:00  WARN 21864 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@f1305d2 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-07-15T11:07:12.527+08:00  WARN 21864 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1ca1a794 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-07-15T11:07:43.814+08:00  WARN 21864 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@333b8e1f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-07-15T11:07:45.322+08:00  WARN 21864 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@652fb97e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-07-15T11:07:54.786+08:00  WARN 21864 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7a0f2f2b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-07-15T11:28:03.818+08:00  WARN 21864 --- [http-nio-0.0.0.0-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `com.group.edu.common.SearchCondition<com.group.edu.entity.Marking>` from Array value (token `JsonToken.START_ARRAY`)]
+2025-07-15T11:28:05.425+08:00  WARN 21864 --- [http-nio-0.0.0.0-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `com.group.edu.common.SearchCondition<com.group.edu.entity.Marking>` from Array value (token `JsonToken.START_ARRAY`)]
+2025-07-15T11:28:14.722+08:00  WARN 21864 --- [http-nio-0.0.0.0-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `com.group.edu.common.SearchCondition<com.group.edu.entity.Marking>` from Array value (token `JsonToken.START_ARRAY`)]
+2025-07-15T13:20:41.237+08:00  INFO 21864 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 5 class path changes (0 additions, 4 deletions, 1 modification)
+2025-07-15T13:20:41.241+08:00  INFO 21864 --- [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-15T13:20:41.247+08:00  INFO 21864 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-15T13:20:41.254+08:00  INFO 21864 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-15T13:20:41.257+08:00  INFO 21864 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-15T13:20:41.419+08:00  INFO 21864 --- [restartedMain] com.group.edu.EduApplication             : Starting EduApplication using Java 22.0.2 with PID 21864 (E:\dev\workspace\project\edu_back\target\classes started by 21809 in E:\dev\workspace\project\edu_back)
+2025-07-15T13:20:41.420+08:00  INFO 21864 --- [restartedMain] com.group.edu.EduApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-07-15T13:20:42.012+08:00  INFO 21864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-15T13:20:42.013+08:00  INFO 21864 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-15T13:20:42.013+08:00  INFO 21864 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-15T13:20:42.028+08:00  INFO 21864 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2025-07-15T13:20:42.028+08:00  INFO 21864 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 604 ms
+2025-07-15T13:20:42.362+08:00  WARN 21864 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'classSelectController': Unsatisfied dependency expressed through field 'classSelectService': No qualifying bean of type 'com.group.edu.service.ClassSelectService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-07-15T13:20:42.363+08:00  INFO 21864 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-07-15T13:20:42.372+08:00  INFO 21864 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-07-15T13:20:42.397+08:00 ERROR 21864 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field classSelectService in com.group.edu.controller.ClassSelectController required a bean of type 'com.group.edu.service.ClassSelectService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.group.edu.service.ClassSelectService' in your configuration.
+
+2025-07-15T13:20:43.838+08:00  INFO 21864 --- [restartedMain] com.group.edu.EduApplication             : Starting EduApplication using Java 22.0.2 with PID 21864 (E:\dev\workspace\project\edu_back\target\classes started by 21809 in E:\dev\workspace\project\edu_back)
+2025-07-15T13:20:43.838+08:00  INFO 21864 --- [restartedMain] com.group.edu.EduApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-07-15T13:20:44.031+08:00  INFO 21864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-15T13:20:44.032+08:00  INFO 21864 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-15T13:20:44.033+08:00  INFO 21864 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-15T13:20:44.043+08:00  INFO 21864 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/api]  : Initializing Spring embedded WebApplicationContext
+2025-07-15T13:20:44.043+08:00  INFO 21864 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 202 ms
+2025-07-15T13:20:44.515+08:00  INFO 21864 --- [restartedMain] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@75e95350
+2025-07-15T13:20:44.546+08:00  INFO 21864 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-15T13:20:44.575+08:00  INFO 21864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api'
+2025-07-15T13:20:44.578+08:00  INFO 21864 --- [restartedMain] com.group.edu.EduApplication             : Started EduApplication in 0.759 seconds (process running for 15600.313)
+2025-07-15T13:20:44.579+08:00  INFO 21864 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
