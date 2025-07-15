@@ -32,7 +32,7 @@ public class OrdersController {
         return R.success(page);
     }
     @PostMapping("/reset")//支付，取消订单（改变订单状态）
-    public R pay(Orders order){
+    public R pay(@RequestBody Orders order){
         boolean r = ordersService.updateById(order);
         if(r){
             return R.success(order);
