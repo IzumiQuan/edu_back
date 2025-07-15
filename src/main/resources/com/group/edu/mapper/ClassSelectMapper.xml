@@ -11,11 +11,12 @@
             <result property="className" column="class_name" />
             <result property="img" column="img" />
             <result property="tag" column="tag" />
+            <result property="certLink" column="cert_link" />
             <result property="createDate" column="create_date" />
     </resultMap>
 
     <sql id="Base_Column_List">
         id,name,class_id,class_name,img,tag,
-        create_date
+        cert_link,create_date
     </sql>
 </mapper>

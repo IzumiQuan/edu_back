@@ -401,3 +401,56 @@ Consider defining a bean of type 'com.group.edu.service.ClassSelectService' in y
 2025-07-15T13:20:44.575+08:00  INFO 21864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api'
 2025-07-15T13:20:44.578+08:00  INFO 21864 --- [restartedMain] com.group.edu.EduApplication             : Started EduApplication in 0.759 seconds (process running for 15600.313)
 2025-07-15T13:20:44.579+08:00  INFO 21864 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-07-15T13:21:56.089+08:00  INFO 21864 --- [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/api]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-15T13:21:56.089+08:00  INFO 21864 --- [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-15T13:21:56.090+08:00  INFO 21864 --- [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-07-15T13:21:56.097+08:00  INFO 21864 --- [http-nio-0.0.0.0-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-07-15T13:21:56.102+08:00  INFO 21864 --- [http-nio-0.0.0.0-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@56e2e323
+2025-07-15T13:21:56.102+08:00  INFO 21864 --- [http-nio-0.0.0.0-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-07-15T13:42:38.018+08:00  INFO 21864 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 5 class path changes (0 additions, 4 deletions, 1 modification)
+2025-07-15T13:42:38.019+08:00  INFO 21864 --- [Thread-15] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-15T13:42:38.025+08:00  INFO 21864 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-15T13:42:38.028+08:00  INFO 21864 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-07-15T13:42:38.029+08:00  INFO 21864 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-07-15T13:42:38.149+08:00  INFO 21864 --- [restartedMain] com.group.edu.EduApplication             : Starting EduApplication using Java 22.0.2 with PID 21864 (E:\dev\workspace\project\edu_back\target\classes started by 21809 in E:\dev\workspace\project\edu_back)
+2025-07-15T13:42:38.150+08:00  INFO 21864 --- [restartedMain] com.group.edu.EduApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-07-15T13:42:38.502+08:00  INFO 21864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-15T13:42:38.505+08:00  INFO 21864 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-15T13:42:38.505+08:00  INFO 21864 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-15T13:42:38.525+08:00  INFO 21864 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/api]  : Initializing Spring embedded WebApplicationContext
+2025-07-15T13:42:38.525+08:00  INFO 21864 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 374 ms
+2025-07-15T13:42:38.765+08:00  WARN 21864 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'classSelectController': Unsatisfied dependency expressed through field 'classSelectService': No qualifying bean of type 'com.group.edu.service.ClassSelectService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-07-15T13:42:38.767+08:00  INFO 21864 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-07-15T13:42:38.772+08:00  INFO 21864 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-07-15T13:42:38.775+08:00 ERROR 21864 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field classSelectService in com.group.edu.controller.ClassSelectController required a bean of type 'com.group.edu.service.ClassSelectService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.group.edu.service.ClassSelectService' in your configuration.
+
+2025-07-15T13:42:40.220+08:00  INFO 21864 --- [restartedMain] com.group.edu.EduApplication             : Starting EduApplication using Java 22.0.2 with PID 21864 (E:\dev\workspace\project\edu_back\target\classes started by 21809 in E:\dev\workspace\project\edu_back)
+2025-07-15T13:42:40.220+08:00  INFO 21864 --- [restartedMain] com.group.edu.EduApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-07-15T13:42:40.386+08:00  INFO 21864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-15T13:42:40.386+08:00  INFO 21864 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-15T13:42:40.386+08:00  INFO 21864 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-15T13:42:40.395+08:00  INFO 21864 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/api]  : Initializing Spring embedded WebApplicationContext
+2025-07-15T13:42:40.396+08:00  INFO 21864 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 174 ms
+2025-07-15T13:42:40.686+08:00  INFO 21864 --- [restartedMain] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2a6d1610
+2025-07-15T13:42:40.710+08:00  INFO 21864 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-15T13:42:40.735+08:00  INFO 21864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api'
+2025-07-15T13:42:40.738+08:00  INFO 21864 --- [restartedMain] com.group.edu.EduApplication             : Started EduApplication in 0.536 seconds (process running for 16916.473)
+2025-07-15T13:42:40.739+08:00  INFO 21864 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged

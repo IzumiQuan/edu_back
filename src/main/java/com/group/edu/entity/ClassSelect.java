@@ -46,7 +46,12 @@ public class ClassSelect {
     private Object tag;
 
     /**
-     * 日期
+     * 证书链接
+     */
+    private String certLink;
+
+    /**
+     * 创建时间
      */
     private Date createDate;
 
@@ -68,6 +73,7 @@ public class ClassSelect {
             && (this.getClassName() == null ? other.getClassName() == null : this.getClassName().equals(other.getClassName()))
             && (this.getImg() == null ? other.getImg() == null : this.getImg().equals(other.getImg()))
             && (this.getTag() == null ? other.getTag() == null : this.getTag().equals(other.getTag()))
+            && (this.getCertLink() == null ? other.getCertLink() == null : this.getCertLink().equals(other.getCertLink()))
             && (this.getCreateDate() == null ? other.getCreateDate() == null : this.getCreateDate().equals(other.getCreateDate()));
     }
 
@@ -81,6 +87,7 @@ public class ClassSelect {
         result = prime * result + ((getClassName() == null) ? 0 : getClassName().hashCode());
         result = prime * result + ((getImg() == null) ? 0 : getImg().hashCode());
         result = prime * result + ((getTag() == null) ? 0 : getTag().hashCode());
+        result = prime * result + ((getCertLink() == null) ? 0 : getCertLink().hashCode());
         result = prime * result + ((getCreateDate() == null) ? 0 : getCreateDate().hashCode());
         return result;
     }
@@ -97,6 +104,7 @@ public class ClassSelect {
         sb.append(", className=").append(className);
         sb.append(", img=").append(img);
         sb.append(", tag=").append(tag);
+        sb.append(", certLink=").append(certLink);
         sb.append(", createDate=").append(createDate);
         sb.append("]");
         return sb.toString();
