@@ -1758,3 +1758,20 @@ java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check th
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
 	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
 
+2025-07-15T18:52:50.126+08:00  INFO 14648 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-15T18:52:50.131+08:00  INFO 14648 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-15T18:52:50.135+08:00  INFO 14648 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-15T18:52:50.141+08:00  INFO 14648 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-15T18:52:54.073+08:00  INFO 13544 --- [restartedMain] com.group.edu.EduApplication             : Starting EduApplication using Java 22.0.2 with PID 13544 (E:\dev\workspace\project\edu_back\target\classes started by 21809 in E:\dev\workspace\project\edu_back)
+2025-07-15T18:52:54.075+08:00  INFO 13544 --- [restartedMain] com.group.edu.EduApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-07-15T18:52:54.125+08:00  INFO 13544 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-15T18:52:54.125+08:00  INFO 13544 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-15T18:52:55.490+08:00  INFO 13544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-15T18:52:55.509+08:00  INFO 13544 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-15T18:52:55.509+08:00  INFO 13544 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-15T18:52:55.548+08:00  INFO 13544 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2025-07-15T18:52:55.548+08:00  INFO 13544 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1423 ms
+2025-07-15T18:52:56.515+08:00  INFO 13544 --- [restartedMain] m.e.s.MybatisPlusApplicationContextAware : Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3a268799
+2025-07-15T18:52:56.635+08:00  INFO 13544 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-15T18:52:56.685+08:00  INFO 13544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api'
+2025-07-15T18:52:56.693+08:00  INFO 13544 --- [restartedMain] com.group.edu.EduApplication             : Started EduApplication in 3.122 seconds (process running for 3.749)
