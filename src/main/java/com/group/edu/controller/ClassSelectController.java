@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.extension.conditions.query.LambdaQueryChainWrapp
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.group.edu.common.R;
 import com.group.edu.common.SearchCondition;
+import com.group.edu.entity.Class;
 import com.group.edu.entity.ClassSelect;
 import com.group.edu.service.ClassSelectService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +21,17 @@ public class ClassSelectController {
     public R attend(@RequestBody ClassSelect info){
         classSelectService.save(info);
         return R.success("报名成功");
+    }
+
+    @PostMapping("/reset")
+    public R set(@RequestBody ClassSelect cs){
+        boolean r = classSelectService.updateById(cs);
+        if(r){
+            return R.success(cs);
+        }
+        else{
+            return R.fail();
+        }
     }
     @PostMapping("/query")//分页查询
     public R page(@RequestBody SearchCondition<ClassSelect> classSelect){
