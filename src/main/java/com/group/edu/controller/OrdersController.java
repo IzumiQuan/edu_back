@@ -14,13 +14,13 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin
 @RestController
 @RequestMapping("/order")
-public class OrderController {
+public class OrdersController {
     @Autowired
-    private OrdersService orderService;
+    private OrdersService ordersService;
     @PostMapping("/query")//分页查询
     public R page(@RequestBody SearchCondition<Orders> order){
         IPage<Orders> page = new Page<>(order.getCurrentPage(),order.getPageSize());
-        LambdaQueryChainWrapper<Orders> queryWrapper = orderService.lambdaQuery();
+        LambdaQueryChainWrapper<Orders> queryWrapper = ordersService.lambdaQuery();
         Orders example = order.getExample();
         if(example!=null){
             queryWrapper.eq(StringUtils.isNotEmpty(example.getName()),Orders::getName,example.getName())
@@ -31,9 +31,9 @@ public class OrderController {
         queryWrapper.page(page);
         return R.success(page);
     }
-    @PostMapping("/pay")//支付，取消订单（改变订单状态）
+    @PostMapping("/reset")//支付，取消订单（改变订单状态）
     public R pay(Orders order){
-        boolean r=orderService.updateById(order);
+        boolean r = ordersService.updateById(order);
         if(r){
             return R.success(order);
         }
