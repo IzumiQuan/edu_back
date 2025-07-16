@@ -41,6 +41,11 @@ public class ActivityEnroll {
     private String activity;
 
     /**
+     * 图片链接
+     */
+    private String img;
+
+    /**
      * 活动时间
      */
     private Date activityDate;
@@ -67,6 +72,7 @@ public class ActivityEnroll {
             && (this.getTel() == null ? other.getTel() == null : this.getTel().equals(other.getTel()))
             && (this.getSex() == null ? other.getSex() == null : this.getSex().equals(other.getSex()))
             && (this.getActivity() == null ? other.getActivity() == null : this.getActivity().equals(other.getActivity()))
+            && (this.getImg() == null ? other.getImg() == null : this.getImg().equals(other.getImg()))
             && (this.getActivityDate() == null ? other.getActivityDate() == null : this.getActivityDate().equals(other.getActivityDate()))
             && (this.getCreateDate() == null ? other.getCreateDate() == null : this.getCreateDate().equals(other.getCreateDate()));
     }
@@ -80,6 +86,7 @@ public class ActivityEnroll {
         result = prime * result + ((getTel() == null) ? 0 : getTel().hashCode());
         result = prime * result + ((getSex() == null) ? 0 : getSex().hashCode());
         result = prime * result + ((getActivity() == null) ? 0 : getActivity().hashCode());
+        result = prime * result + ((getImg() == null) ? 0 : getImg().hashCode());
         result = prime * result + ((getActivityDate() == null) ? 0 : getActivityDate().hashCode());
         result = prime * result + ((getCreateDate() == null) ? 0 : getCreateDate().hashCode());
         return result;
@@ -96,6 +103,7 @@ public class ActivityEnroll {
         sb.append(", tel=").append(tel);
         sb.append(", sex=").append(sex);
         sb.append(", activity=").append(activity);
+        sb.append(", img=").append(img);
         sb.append(", activityDate=").append(activityDate);
         sb.append(", createDate=").append(createDate);
         sb.append("]");

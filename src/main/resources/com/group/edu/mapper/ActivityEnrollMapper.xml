@@ -10,12 +10,13 @@
             <result property="tel" column="tel" />
             <result property="sex" column="sex" />
             <result property="activity" column="activity" />
+            <result property="img" column="img" />
             <result property="activityDate" column="activity_date" />
             <result property="createDate" column="create_date" />
     </resultMap>
 
     <sql id="Base_Column_List">
-        id,name,tel,sex,activity,activity_date,
-        create_date
+        id,name,tel,sex,activity,img,
+        activity_date,create_date
     </sql>
 </mapper>
